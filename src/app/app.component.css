@@ -1,12 +1,27 @@
-.toolbar{
+.toolbar {
   background-color: #70C9D1;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  margin: 0;
+}
+
+.toolbar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 16px;
+}
+
+.full-width {
+  width: 100%;
+}
 
 .example-spacer {
-    flex: 1 1 auto;
-  }
+  flex: 1 1 auto;
+}
 
-.mat-mdc-raised-button.dialog{
+.mat-mdc-raised-button.dialog {
   background-color: #f4811e;
   color: #feffff;
   border-radius: 50px;
@@ -16,30 +31,56 @@
   color: #3855A5;
 }
 
-  table {
-    width: 100%;
-  }
-  
-  .mat-mdc-form-field {
-    font-size: 14px;
-    width: 100%;
-  }
+table {
+  width: 100%;
+}
 
-  .container{
-    max-width: 1100px;
-    margin: 0 auto;
+.full-width-table {
+  width: 100%;
+  margin-top: 16px;
+}
 
-  }
+.mat-elevation-z8 {
+  border-radius: 8px;
+  overflow: hidden;
+}
 
-  .logo{
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
-  }
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+  margin-bottom: 16px;
+}
 
-  .bg{
-    background-image: url('../assets/bg1.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 90vh;
-  }
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.bg {
+  background-image: url('../assets/bg2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: #70C9D1;
+}
+
+.mat-form-field.mat-focused .mat-form-field-ripple {
+  background-color: #70C9D1;
+}
