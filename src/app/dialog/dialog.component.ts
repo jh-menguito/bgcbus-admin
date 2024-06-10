@@ -29,7 +29,7 @@ export class DialogComponent implements OnInit {
       plateNum: ['', Validators.required],
       Route: ['', Validators.required],
       Email: ['', [Validators.required, Validators.pattern(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/)]], //domainValidator()
-      Password: ['', [Validators.required, Validators.pattern('[0-9]{10}')]], //must be 11 digit numbers
+      Password: ['', [Validators.required]], //must be 11 digit numbers
    })
   
 
